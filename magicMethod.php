@@ -38,12 +38,19 @@ class test{
         echo 'you are calling not exist static method '.$name.PHP_EOL;
     }
 
+    //直接echo 对象的时候 会调用 __toString 方法
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return 'this callled __toString method';
+    }
 
 
 }
 
 $test = new test('2222');
+echo $test;
 
-test::nimei();
+//test::nimei();
 
-$test->haha('3333');
+//$test->haha('3333');
