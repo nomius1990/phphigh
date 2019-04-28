@@ -26,7 +26,7 @@ class p{
     }
 
     public function showTest(){
-        echo 'i am from class p';
+        echo 'i am from class p'.PHP_EOL;
     }
 
 
@@ -77,12 +77,13 @@ class com{
 
 
 trait traittest{
+
     public function showTest(){
-        echo 'i am from trait';
+        echo 'i am from trait'.PHP_EOL;
     }
 
     public function getAge(){
-
+        echo 'i am showing the age from trait'.PHP_EOL;
     }
 }
 
@@ -97,3 +98,4 @@ $com->setName('i am name');
 
 $test = new test();
 $test->showTest();
+$test->getAge();
